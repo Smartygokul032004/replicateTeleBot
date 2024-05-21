@@ -13,7 +13,7 @@ script_dir = Path(__file__).parent
 def get_replicate_models(path=(script_dir / "ai_modules" / "replicate_models.json").resolve()):
     def create_default_file(path=path):
         command, model, version = \
-            "SD", "stability-ai/stable-diffusion", "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf"
+            "AI", "stability-ai/stable-diffusion", "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf"
         message_data_type = ["text"]
         prompt_extend, neg_prompt_extend = "", ""
         params = {"negative_prompt": ""}
